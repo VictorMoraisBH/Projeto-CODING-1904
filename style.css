@@ -1,0 +1,118 @@
+body, h1, h2, h3, p, ul, ol, dl, figure, table, fieldset, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(170, 102, 197, 0.678);
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(56, 5, 104);
+    color: rgb(201, 143, 255);
+}
+
+section li {
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+section li a img {
+    vertical-align: middle; 
+    max-width: 100%;
+    height: auto; 
+    max-height: 35px;
+}
+
+header nav li {
+    display: inline;
+    margin: 0 20px;
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#contados .container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.satoru {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; 
+    margin-right: 32px;
+}
+
+section {
+    padding: 24px;
+}
+
+h2, h3 {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px; 
+    width: 100%; 
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid #480252;
+}
+
+form button:active {
+    transform: translateY(2px); 
+}
+
+form textarea {
+    resize: none;
+}
+
+.input-invalid {
+    border-color: red;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+#mensagem-erro-email {
+    display: block;
+    margin: 3px;
+    text-align: center;
+    align-items: center;
+    font: bold;
+    font-size: 17px;
+    color: red;
+}
