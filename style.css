@@ -48,13 +48,14 @@ header h1 {
 }
 
 
-#contados .container {
-    max-width: 1280px;
+#contact .container {
+    max-width: auto ;
     width: 100%;
     margin: 0 auto;
 }
 
 .satoru {
+    border-radius: 15px;
     max-width: 100%;
     height: auto;
     max-height: 300px; 
