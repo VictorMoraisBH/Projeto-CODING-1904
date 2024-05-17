@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#comentarios {
+    margin-top: 30px;
+}
+
+#form-comentarios {
+    margin-bottom: 20px;
+}
+
+#form-comentarios label {
+    display: block;
+    margin: 5px 0;
+}
+
+#form-comentarios input, textarea {
+    width: 50%;
+    padding: 3px;
+    margin: 5px 0;
+}
+
+#form-comentarios button {
+    padding: 5px 20px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#form-comentarios button:hover {
+    background-color:rgb(43, 4, 80)
+}
+
+#form-comentarios .comentario {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#form-comentarios .comentario strong {
+    display: block;
+    margin-bottom: 5px;
+}
