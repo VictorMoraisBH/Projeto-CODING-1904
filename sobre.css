@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*CSS DOS COMENTÁRIOS*/
 #comentarios {
     margin-top: 30px;
 }
@@ -44,3 +45,38 @@
     display: block;
     margin-bottom: 5px;
 }
+
+/*CSS DA HEADER*/
+
+header {
+    background-color: rgb(56, 5, 104);
+    color: rgb(201, 143, 255);
+    padding: 16px 0px;
+}
+
+.container img {
+    border-radius: 15px;
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
