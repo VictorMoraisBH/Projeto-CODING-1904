@@ -11,9 +11,14 @@ body {
 
 /* Estilos para o cabeçalho */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 16px 0;
     background-color: rgb(56, 5, 104);
     color: rgb(201, 143, 255);
+    z-index: 1000;
 }
 
 /* Estilos para listas dentro de seções */
@@ -59,6 +64,7 @@ header h1 {
 
 /* Estilos para o contêiner do anime */
 .container-anime {
+    padding-top: 60px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
