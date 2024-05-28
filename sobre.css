@@ -1,12 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*CSS DOS COMENTÁRIOS*/
+body{
+    background-color: rgb(255, 109, 255);
+}
+
+/* CSS DOS COMENTÁRIOS */
 #comentarios {
     margin-top: 30px;
+    padding: 0 20px;
 }
 
 #form-comentarios {
@@ -18,40 +23,58 @@
     margin: 5px 0;
 }
 
-#form-comentarios input, textarea {
-    width: 50%;
-    padding: 3px;
+#form-comentarios input, #form-comentarios textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px;
     margin: 5px 0;
+    border: 1px solid #020101;
+    border-radius: 5px;
+    resize: none;
+}
+
+#form-comentarios textarea {
+    height: 150px;
 }
 
 #form-comentarios button {
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: blueviolet;
     color: white;
-    border-radius: 10%;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #form-comentarios button:hover {
-    background-color:rgb(43, 4, 80)
+    background-color: rgb(43, 4, 80);
 }
 
-#form-comentarios .comentario {
-    border-top: 1px solid #ddd;
+#lista-comentarios .comentario {
+    border-top: 1px solid #000000;
     padding: 10px 0;
+    margin-top: 10px;
 }
 
-#form-comentarios .comentario strong {
+#lista-comentarios .comentario strong {
     display: block;
     margin-bottom: 5px;
 }
 
-/*CSS DA HEADER*/
-
+/* CSS DA HEADER */
 header {
     background-color: rgb(56, 5, 104);
     color: rgb(201, 143, 255);
-    padding: 16px 0px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+/* CSS DA SEÇÃO SOBRE O ANIME */
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
 }
 
 .container img {
@@ -61,22 +84,15 @@ header {
     margin-right: 20px;
 }
 
-.container {
-    display: flex;
-    align-items: flex-start;
-    margin: 20px 20px;
+.texto-container {
+    max-width: 600px;
 }
 
+.texto-container h2 {
+    margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.texto-container p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
