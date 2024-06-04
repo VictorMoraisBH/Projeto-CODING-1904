@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>Faça Login</title>
+</head>
+<body>
+    <main id="container">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>Login</h1>
+                <img id="mode_icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABH0lEQVR4nO3VTytEURgH4CeUEgtLhuzkY1iaBQvJF2CF1BSfwkrsKCv2UnwUWVj4t5ZRFmJGp46SzMy9457bLOat3+7ennvf3nNe+tWDNYnxMsEKTnGLobLQVdTRxF5ZaA2NiIYslPWnjR9oM7Y8aU3g+RcaMpwaPvsDDRlLfWTeW8CzKeHdFmjy4bpsAx+khO/awPcYTAW/tYFD1lLB9Q7wY6rpvukAN+McFN7yqwxwyD4GioS3MsIh50W2fRofOfAnrBfV+uMc8HcecIgq5jCKEcxgEfNZ4EqG6c6Tl7h4MlU1Z8tbJazWlbwt38bnP9Dw7oYua6nLtod9vqyAVXmUsfXhmZN4OgqrKWzGm+sar/FuD8vjAjvxI/vVW/UFABDWXHcFkVQAAAAASUVORK5CYII=">
+            </div>
+            <div id="social_media">
+                <a href="#">
+                    <img src="./imagens/Facebook.png" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="./imagens/google.512x512.png" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="./imagens/github.png" alt="facebook">
+                </a>
+            </div>
+            <div id="inputs">
+                <div class="input_box">
+                    <label for="name">
+                        <strong>Nome</strong>
+                            <div class="input_field">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">
+                                <input type="text" id="name" name="name">
+                            </div>
+                    </label>
+                    <label for="email">
+                        <strong>E-mail</strong>
+                            <div class="input_field">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVR4nO3SLUtEQRTG8Z8vRQSbwSLYxWDwA4iIwn4BsZisRquYrILFarQa9Ato2WQ16doF0aIoIxdmYdDZy1x3QcN94IE795zz/OHM0Oo/aR33CEP6AWs5wMkIwkP0YQ4wjl08DxH8FDPG6lY1h7NfhJ9jti74Ep3k3Cm8kzusJnPb6OYA/YELzMd/UzjAWyb4HceYjr0LuErqAwGVX7GPiVhbwk1Sv8ZirE1iDy/fMmoBfXexnDyCrejqu9IKbgfMFgECPnGKmaS3WssRPmrmigEhuoed6MeC/saA0NAtQOMVlVxcKHT1IH5oc0SQHjZygFZ/oy/03A0mROcTpAAAAABJRU5ErkJggg==">
+                                <input type="email" id="email" name="e-mail">
+                            </div>
+                    </label>
+                    <label for="password">
+                        <strong>Senha</strong>
+                            <div class="input_field">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5klEQVR4nO2WMQrCQBREX69iIdioZ1E7Q1pPIoitkAMpIrH0BuoZEgttLKKd4MrCD9iYZNkNQcnAND+TeeTDJoFa2eoCAXAEHsAV2AMzoE1JmgIJoL74AkzKgL4EsAKGQEM8AtZy7Qn4LtebSPE8I7eQzA3ouAAHH0+ap41kly7AJynT683TWLIHF+C7lDULZFuS1fdYS4nLylcP9oFzxnk1dQx4RcCxQ2jqyGRVrp2rGqyqWPUW6AF9ILSYK1OwLkg1sJirnwGHUqZLdhZzZQquz7H6yzdXXNVHwnMMj8r47a1FUb0BZxVjN8R/rOQAAAAASUVORK5CYII=">
+                                <input type="password" id="password" name="password">
+                            </div>
+                    </label>
+                    <div id="forgot_password">
+                        <a href="#">
+                            Esqueceu sua senha?
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+</body>
+</html>
