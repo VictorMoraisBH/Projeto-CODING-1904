@@ -13,19 +13,27 @@
             <h1>Fórum de Discussão</h1>
         </div>
     </header>
-    <section>
-        <div>
-            <h2>Novidade</h2>
-            <p>Últimas novidades e atualizações do fórum.</p>
-        </div>
-        <div>
-            <h2>Tema</h2>
-            <p>Discussões sobre o tema atual.</p>
-        </div>
-        <div>
-            <h2>Membros</h2>
-            <p>Lista de membros ativos no fórum.</p>
+    <section class="sections-container">
+            <div class="conteudo">
+                <h2>Novidades</h2>
+                <p>Aqui estão as últimas novidades...</p>
+                <button onclick="mostrarConteudo(1)">Mostrar Mais</button>
+            </div>
+            <div class="conteudo">
+                <h2>Temas</h2>
+                <p>Discussões sobre o tema atual...</p>
+                <button onclick="mostrarConteudo(2)">Mostrar Mais</button>
+            </div>
+            <div class="conteudo">
+                <h2>Membros</h2>
+                <p>Lista de membros ativos no fórum...</p>
+                <button onclick="mostrarConteudo(3)">Mostrar Mais</button>
+            </div>
+        </section>
+        <div id="conteudo-extra">
+            <!-- Aqui será exibido o conteúdo extra -->
         </div>
     </section>
+    <script src="./forum.js"></script>
 </body>
 </html>
