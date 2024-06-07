@@ -20,7 +20,6 @@ header img {
     object-fit: cover;
 }
 
-
 header h1 {
     position: absolute;
     bottom: 20px;
@@ -35,11 +34,25 @@ header h1 {
 .sections-container {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+}
+
+.conteudo h2 {
+    text-shadow: 1px 2px 5px rgb(230, 173, 16);
+}
+
+button {
+    margin-top: 10px;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    color: #ffffffee;
 }
 
 section {
-    padding: 20px;
-    margin: 0 10px;
+    padding: 10px;
+    margin: 0 10px 0;
 }
 
 section div {
@@ -47,7 +60,23 @@ section div {
 }
 
 h2 {
+    color: #000000;
+    font-size: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.highlight-1 {
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 5px rgb(230, 173, 16);
+    font-weight: bold;
+}
+
+#texto-extra {
+    margin: 0;
+    margin-top: 5px;
 }
 
 p {
