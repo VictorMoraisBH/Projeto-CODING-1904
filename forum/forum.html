@@ -3,47 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./forum.css">
-    <title>Fórum</title>
+    <link rel="stylesheet" href="forum.css">
+    <title>Fórum JuJuTsu</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="../imagens/imagem-forum.jpg" alt="Imagem do fórum">
-            <h1>Fórum de Discussão</h1>
+        <div class="logo">
+            
+            <h1><img src="../assets/imagens/logo1.png" alt="Logo JuJuTsu" style="width: 300px;"></h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Membros</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="sections-container">
-        <div class="conteudo" id="conteudo1">
-            <h2>Novidades</h2>
-            <p>Aqui estão as últimas novidades...</p>
-            <button onclick="mostrarConteudo(1)">Mostrar Mais</button>
-        </div>
-        <div class="conteudo" id="conteudo2">
-            <h2>Temas</h2>
-            <p>Discussões sobre o tema atual...</p>
-            <button onclick="mostrarConteudo(2)">Mostrar Mais</button>
-        </div>
-        <div class="conteudo" id="conteudo3">
-            <h2>Membros</h2>
-            <p>Lista de membros ativos no fórum...</p>
-            <button onclick="mostrarConteudo(3)">Mostrar Mais</button>
-        </div>
-        <div id="conteudo-extra" style="display: none;">
-            <!-- Conteúdo extra -->
-            <h3 id="titulo-extra-1" style="display: none;">Título Extra</h3>
-            <h3 id="titulo-extra-2" style="display: none;">Título Extra</h3> 
-            <h3 id="titulo-extra-3" style="display: none;">Título Extra</h3> 
-            <p id="texto-extra"></p>
-            <button onclick="voltar()">Voltar</button>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h3>Titulo da Publicação</h3>
-            <p><img src="../imagens/publicacao1.jpeg" style="max-width: 600px;" alt=""></p>
-        </div>
-    </section>
+    <main>
+        <section class="forum-list">
+            <div class="forum-category">
+                <h2>Discussões Gerais</h2>
+                <div id="topics">
+                    <!-- Tópicos serão adicionados aqui -->
+                </div>
+            </div>
+        </section>
+        <section class="new-topic">
+            <h2>Novo Tópico</h2>
+            <form id="new-topic-form">
+                <label for="topic-title">Título:</label>
+                <input type="text" id="topic-title" required>
+                <label for="topic-content">Conteúdo:</label>
+                <textarea id="topic-content" required></textarea>
+                <button type="submit">Adicionar Tópico</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JuJuTsu. Todos os direitos reservados.</p>
+    </footer>
     <script src="./forum.js"></script>
 </body>
 </html>

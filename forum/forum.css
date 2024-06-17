@@ -1,90 +1,142 @@
-/* CSS para estilização da imagem no cabeçalho */
+/* Reset básico para todos os elementos */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o cabeçalho */
 header {
-    position: relative;
-}
-
-header div {
-    position: relative;
-}
-
-header img {
-    width: 1980px;
-    height: 100%; 
-    max-width: 100%;
-    border: 3px solid #000;
-    object-fit: cover;
-}
-
-header h1 {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    background-image: url('../assets/imagens/imagem-forum.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
     color: #fff;
+    padding: 20px;
     text-align: center;
-    margin: 0;
-    padding: 10px 20px;
-    text-shadow: 1px 2px 5px rgb(243, 180, 7);
 }
-.sections-container {
+
+/* Estilos para os links da navegação */
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.conteudo h2 {
-    text-shadow: 1px 2px 5px rgb(230, 173, 16);
-}
-
-button {
+    justify-content: center;
     margin-top: 10px;
-    background-color: #000;
-    border-radius: 10px;
-    padding: 5px;
-    border: none;
-    color: #ffffffee;
 }
 
-section {
-    padding: 10px;
-    margin: 0 10px 0;
+nav ul li {
+    margin: 0 20px;
 }
 
-section div {
+nav ul li a {
+    background-color: #3a2e2e;
+    border-radius: 10%;
+    padding: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para a lista de fóruns */
+.forum-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada categoria de fórum */
+.forum-category {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forum-category h2 {
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* Estilos para cada fórum */
+.forum {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #000000;
-    font-size: 30px;
-    margin-top: 10px;
+.forum h3 {
+    margin-bottom: 5px;
+}
+
+/* Estilos para a seção de novo tópico */
+.new-topic {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-topic form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-topic label {
+    margin: 10px 0 5px;
+}
+
+.new-topic input, .new-topic textarea {
+    padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.highlight-1 {
-    font-size: 26px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 2px 5px rgb(230, 173, 16);
-    font-weight: bold;
+.new-topic button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#texto-extra {
-    margin: 0;
-    margin-top: 5px;
+/* Estilos para o rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-p {
-    margin: 0;
+/* Estilos para todos os botões */
+button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    header img {
-        height: 25vh;
-    }
+button:hover {
+    background-color: #555;
 }
